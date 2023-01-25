@@ -1,0 +1,424 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,
+      "groups": [
+          {
+            "num_to_select": 4,
+            "trades": [
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:diamond",
+                    "quantity": 10
+                  },
+                  {
+                    "item": "minecraft:redstone_block",
+                    "quantity": 32
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:shulker_box",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 2,
+                "weight":3,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:charcoal",
+                    "quantity": 10
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:nautilus_shell",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 40,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:bucket",
+                    "quantity": 1
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:milk_bucket",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 1,
+                "weight":3,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:flint",
+                    "quantity": 64
+                  },
+                  {
+                    "item": "minecraft:grindstone",
+                    "quantity": 64
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:book",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "specific_enchants",
+                        "enchants": [{"id":"unbreaking","level":3}]
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 3,
+                "weight":3,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:blue_ice",
+                    "quantity": 60
+                  },
+                  {
+                    "item": "minecraft:smithing_table",
+                    "quantity": 32
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:book",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "specific_enchants",
+                        "enchants": [{"id":"frost_walker","level":2}]
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 1,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:gold_ingot",
+                    "quantity": 10
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:iron_ingot",
+                    "quantity": 20
+                  }
+                ],
+                "max_uses": 3,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:iron_ingot",
+                    "quantity": 20
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:gold_ingot",
+                    "quantity": 10
+                  }
+                ],
+                "max_uses": 4,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:enchanted_golden_apple",
+                    "quantity": 1
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:dragon_egg",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 1,
+                "weight":1,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:pufferfish",
+                    "quantity": 30
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:netherite_ingot",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 4,
+                "weight":3,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:ghast_tear",
+                    "quantity": 15
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:axolotl_bucket",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 1,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:copper_ingot",
+                    "quantity": 50
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:ender_pearl",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 10,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:glow_ink_sac",
+                    "quantity": 7
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:flowering_azalea",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 12,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:spider_eye",
+                    "quantity": 1
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:bone_meal",
+                    "quantity": 3
+                  }
+                ],
+                "max_uses": 24,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cake",
+                    "quantity": 20
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:saddle",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 5,
+                "weight":5,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:end_crystal",
+                    "quantity": 1
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:sponge",
+                    "quantity": 6
+                  }
+                ],
+                "max_uses": 8,
+                "weight":5,
+                "reward_exp": true
+              }
+            ]
+          },
+          {
+            "num_to_select": 1,
+            "trades": [
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cooked_mutton",
+                    "quantity": 12
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:sapling",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "set_data",
+                        "data": 4
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 4,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cooked_porkchop",
+                    "quantity": 12
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:sapling",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "set_data",
+                        "data": 1
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 4,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cooked_beef",
+                    "quantity": 12
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:sapling",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "set_data",
+                        "data": 2
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 4,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cooked_chicken",
+                    "quantity": 12
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:sapling",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "set_data",
+                        "data": 5
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 4,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cooked_cod",
+                    "quantity": 12
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:sapling",
+                    "quantity": 1,
+                    "functions": [
+                      {
+                        "function": "set_data",
+                        "data": 3
+                      }
+                    ]
+                  }
+                ],
+                "max_uses": 4,
+                "reward_exp": true
+              },
+              {
+                "wants": [
+                  {
+                    "item": "minecraft:cooked_salmon",
+                    "quantity": 12
+                  }
+                ],
+                "gives": [
+                  {
+                    "item": "minecraft:mangrove_propagule",
+                    "quantity": 1
+                  }
+                ],
+                "max_uses": 4,
+                "reward_exp": true
+              }
+            ]
+          }
+      ]
+    }
+  ]
+}

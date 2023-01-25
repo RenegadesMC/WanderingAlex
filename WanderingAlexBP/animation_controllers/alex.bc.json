@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12.0",
+    "animation_controllers": {
+        "controller.animation.alex.commands" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+                    "on_entry": [ "@s renegades:isnotintrigued"],
+					"transitions" : [
+						{
+							"raising" : "variable.raise_arms > 0.0"
+						}
+					]
+				},
+				"raising" : {
+                    "on_entry": [ "@s renegades:isintrigued"],
+					"transitions" : [
+						{
+							"default" : "variable.raise_arms == 0.0"
+						}
+					]
+				}
+			}
+		}
+    }
+}

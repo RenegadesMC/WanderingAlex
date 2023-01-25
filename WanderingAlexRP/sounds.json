@@ -1,0 +1,16 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"renegades:alex": {
+				"events": {
+					"ambient": "alex.say",
+					"death": "alex.death",
+					"hurt": "alex.hurt",
+					"step": "alex.walk"
+				},
+				"pitch": [1.5, 1.8],
+				"volume": 1
+			}
+		}
+	}
+}

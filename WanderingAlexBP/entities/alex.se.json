@@ -1,0 +1,149 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "renegades:alex",
+            "runtime_identifier": "minecraft:wandering_trader",
+            "is_summonable": true,
+            "is_spawnable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": ["renegades:alexc"]
+            },
+            "animations": {
+                "renegades:alexc": "controller.animation.alex.commands"
+            }
+            
+        },
+        "component_groups": {
+            "renegades:intrigue": {
+                "minecraft:pushable": {
+                    "is_pushable": false,
+                    "is_pushable_by_piston": false
+                }
+            },
+            "renegades:nointrigue": {
+                "minecraft:pushable": {
+                    "is_pushable": true,
+                    "is_pushable_by_piston": true
+                }
+            }
+        },
+        "components": {
+        //Stuff
+            "minecraft:managed_wandering_trader": {},
+            "minecraft:type_family": {
+                "family": ["alex"]
+            },
+            "minecraft:health": {
+                "value": 30,
+                "max": 30
+            },
+            "minecraft:movement": {
+                "value": 0.5
+            },
+            "minecraft:conditional_bandwidth_optimization": {},
+            "minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+            "minecraft:economy_trade_table": {
+				"display_name": "entity.alex.name",
+				"table": "trades/economy_trades/alex_trades.json",
+				"new_screen": false
+			},
+            "minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+            "minecraft:behavior.panic": {
+                "priority": 1,
+                "speed_multiplier": 0.6
+            },
+        //Navigation
+            "minecraft:physics": {},
+            "minecraft:jump.static": {},
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "avoid_damage_blocks": true,
+                "avoid_portals": true,
+                "can_walk": true,
+                "avoid_water": true,
+                "can_pass_doors": true,
+                "can_open_doors": true,
+                "can_swim": true
+            },
+        //Behavior
+            "minecraft:behavior.door_interact": {},
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:behavior.trade_with_player": {},
+            "minecraft:behavior.look_at_trading_player": {
+                "probability": 0.12,
+                "priority": 1,
+                "within_radius": 2,
+                "angle_of_view_vertical": 160
+            },
+            "minecraft:behavior.trade_interest": {
+				"priority": 3,
+				"within_radius": 6,
+				"interest_time": 45,
+				"remove_item_time": 1,
+				"carried_item_switch_time": 2,
+				"cooldown": 2
+			},
+            "minecraft:behavior.look_at_entity": {
+                "probability": 0.01,
+                "priority": 5,
+                "angle_of_view_vertical": 160
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 7,
+                "speed_multiplier": 0.6
+              },
+            "minecraft:behavior.look_at_player": {
+                "priority": 9,
+                "look_distance": 4,
+                "probability": 0.006,
+                "angle_of_view_vertical": 160
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 8
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": ["renegades:nointrigue"]
+                }
+            },
+            "renegades:isintrigued": {
+                "add": {
+                    "component_groups": ["renegades:intrigue"]
+                },
+                "remove": {
+                    "component_groups": ["renegades:nointrigue"]
+                }
+            },
+            "renegades:isnotintrigued": {
+                "add": {
+                    "component_groups": ["renegades:nointrigue"]
+                },
+                "remove": {
+                    "component_groups": ["renegades:intrigue"]
+                }
+            }
+        }
+    }
+}

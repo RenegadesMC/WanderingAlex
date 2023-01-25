@@ -1,0 +1,53 @@
+{
+    "format_version": "1.12.0",
+    "animation_controllers": {
+        "controller.animation.alex.walk": {
+            "initial_state": "standing",
+            "states": {
+				"standing": {
+					"transitions": [
+						{
+							"moving": "query.modified_move_speed > 0.1"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"moving": {
+					"animations": ["walk"],
+					"transitions": [
+						{
+							"standing": "query.modified_move_speed < 0.1"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+        },
+        "controller.animation.alex.intrigued" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"raising" : "variable.raise_arms > 0.0"
+						}
+					]
+				},
+				"raising" : {
+					"animations" : [ "intrigued" ],
+					"sound_effects": [
+						{
+							"effect": "huh"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "variable.raise_arms == 0.0"
+						}
+					],
+					"blend_transition": 1.3
+				}
+			}
+		}
+    }
+}

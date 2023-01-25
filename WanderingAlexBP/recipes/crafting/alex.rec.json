@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.41",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "renegades:alex"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            " h ",
+            "eje",
+            "l l"
+        ],
+        "key": {
+            "h": "minecraft:heart_of_the_sea",
+            "l": "minecraft:leather",
+            "e": "minecraft:emerald_block",
+            "j": "minecraft:armor_stand"
+        },
+        "result": {
+            "item": "minecraft:spawn_egg",
+            "data": "query.get_actor_info_id('renegades:alex')"
+        }
+    }
+}

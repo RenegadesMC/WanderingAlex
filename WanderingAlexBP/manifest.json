@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Wandering Alex",
+		"description": "Wandering Alex Behavior Pack",
+		"uuid": "7049d882-b7ac-40d4-b74c-17d1c20cf569",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["renegades"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.0.9"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "3e5db4e3-2f57-4e27-a91f-b9fc17e88b07",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "cdeeb2fd-76a4-4a1d-b94d-9c813744aba2",
+			"version": [1, 0, 0]
+		}
+	]
+}

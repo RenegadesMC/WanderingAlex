@@ -1,0 +1,33 @@
+
+{
+    "format_version" : "1.14.0",
+    "sound_definitions" : {
+        "alex.death" : {
+            "sounds" : [
+                "sounds/mob/alex/death"
+            ]
+        },
+        "alex.walk" : {
+            "sounds" : [
+                "sounds/mob/alex/walk"
+            ]
+        },
+        "alex.say" : {
+            "sounds" : [
+                "sounds/mob/alex/say1",
+                "sounds/mob/alex/say2"
+            ]
+        },
+        "alex.hurt" : {
+            "sounds" : [
+                "sounds/mob/alex/hurt"
+            ]
+        },
+        "alex.intrigue" : {
+            "sounds" : [
+                "sounds/mob/alex/intrigue"
+            ]
+        }
+    }
+}
+       

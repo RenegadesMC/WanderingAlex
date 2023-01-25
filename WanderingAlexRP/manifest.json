@@ -1,0 +1,24 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Wandering Alex",
+		"description": "Wandering Alex Resource Pack",
+		"uuid": "cdeeb2fd-76a4-4a1d-b94d-9c813744aba2",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["renegades"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.0.9"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Wandering Alex",
+			"type": "resources",
+			"uuid": "584e38c5-c566-4906-a719-c738aba63535",
+			"version": [1, 0, 0]
+		}
+	]
+}

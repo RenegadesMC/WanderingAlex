@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "renegades:alex",
+            "materials": {
+                "default": "skeleton"
+            },
+            "textures": {
+                "default": "textures/entity/alex"
+            },
+            "geometry": {
+                "default": "geometry.alex"
+            },
+            "sound_effects": {
+                "huh": "alex.intrigue"
+            },
+            "scripts": {
+                "animate": ["walk_controller", "intrigue_controller", "look_at_target"],
+                "pre_animation": [
+                    "variable.eye_target.x = query.target_y_rotation - this;",
+			        "variable.eye_target.y = query.target_x_rotation - this;"
+			    ]
+            },
+            "animations": {
+                "look_at_target": "animation.alex.look_at_target",
+                "walk_controller": "controller.animation.alex.walk",
+                "intrigue_controller": "controller.animation.alex.intrigued",
+                "walk": "animation.alex.walk",
+                "intrigued": "animation.alex.intrigued"
+            },
+            "spawn_egg": {
+                "base_color": "#425f38",
+				"overlay_color": "#ff933a"
+            },
+            "render_controllers": ["controller.render.alex"]
+        }
+    }
+}
